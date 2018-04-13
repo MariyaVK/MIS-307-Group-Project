@@ -1,0 +1,59 @@
+public class Payroll
+{
+   String name; 
+   int idNumber; 
+   double rate; 
+   int hours; 
+  
+   public Payroll(String empName, int ID)
+   {
+       name=empName;
+       idNumber=ID;
+   }
+  
+   public String getName()
+   {
+       return name;
+   }
+  
+   public int getidNumber()
+   {
+       return idNumber;
+   }
+  
+   public double getRate()
+   {
+       return rate;
+   }
+  
+   //method that returns hours
+   public int hours()
+   {
+       return hours;
+   }
+  
+   public void setName(String empName)
+   {
+       name=empName;
+   }
+  
+   public void setIdNumber(int id)
+   {
+       idNumber=id;
+   }
+  
+   public void setRate(double r)
+   {
+       rate=r;
+   }
+  
+   public void setHours(int h)
+   {
+       hours=h;
+   }
+  
+   public double grossPay()
+   {
+       return (hours * rate);
+   }
+}
