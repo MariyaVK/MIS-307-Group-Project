@@ -1,0 +1,60 @@
+public class Employee {
+
+	String lastName;
+	String firstName;
+	boolean isMarried;
+	String ssn;
+	String phoneNumber;
+	boolean isManager;
+
+	public Employee(String givenFirstName, String givenLastName, boolean givenIsMarried, String givenSSN,
+			String givenPhoneNumber, boolean givenIsManager) {
+		firstName = givenFirstName;
+		lastName = givenLastName;
+		isMarried = givenIsMarried;
+		ssn = givenSSN;
+		phoneNumber = givenPhoneNumber;
+		isManager = givenIsManager;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public boolean isMarried() {
+		return isMarried;
+	}
+
+	public void setMarried(boolean isMarried) {
+		this.isMarried = isMarried;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public boolean isManager() {
+		return isManager;
+	}
+
+	public void setManager(boolean isManager) {
+		this.isManager = isManager;
+	}
+
+}
