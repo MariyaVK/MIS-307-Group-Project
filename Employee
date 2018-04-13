@@ -6,6 +6,8 @@ public class Employee {
 	String ssn;
 	String phoneNumber;
 	boolean isManager;
+	static int autoID = 1000;
+	int id;
 
 	public Employee(String givenFirstName, String givenLastName, boolean givenIsMarried, String givenSSN,
 			String givenPhoneNumber, boolean givenIsManager) {
@@ -15,6 +17,8 @@ public class Employee {
 		ssn = givenSSN;
 		phoneNumber = givenPhoneNumber;
 		isManager = givenIsManager;
+		id = autoID;
+		autoID++;
 	}
 
 	public String getLastName() {
